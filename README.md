@@ -140,6 +140,20 @@ The `src/W07` folder focuses on advancing method usage, 2D arrays, method overlo
 
 All Week 07 examples authored by pensyarah and enriched with structured educational headers.
 
+Summary of Week 08 (W08)
+-------------------------
+The `src/W08` folder contains capstone exercises combining concepts from W01-W07 through realistic, scenario-based problems. These exercises use procedural programming with static helper methods but do not introduce object-oriented programming:
+
+- [`W08E01.java`](Exercise2025/src/W08/W08E01.java) — Student grade management system: reads student names and grades with input validation, calculates statistics (average, min, max), classifies grades as letter grades (A-F), and displays a formatted report.
+- [`W08E02.java`](Exercise2025/src/W08/W08E02.java) — Inventory management menu system: menu-driven interface using switch statements, manage product stock with parallel arrays, add/remove items with validation, search by product name, displays current inventory.
+- [`W08E03.java`](Exercise2025/src/W08/W08E03.java) — Sales analysis dashboard: analyzes 2D array of weekly sales data (products × days), calculates product and daily statistics (totals, averages, min/max), displays formatted tables and summary reports.
+- [`W08E04.java`](Exercise2025/src/W08/W08E04.java) — Text analysis tool: processes multi-line input to count characters, words, sentences, vowels, and classify character types (uppercase, lowercase, digits), provides averages and detailed breakdown using Character class methods.
+- [`W08E05.java`](Exercise2025/src/W08/W08E05.java) — Number guessing game: computer generates random number (1-100), player guesses with hot/cold feedback, tracks statistics (games played, total guesses, average guesses per game), implements game loop with replay option.
+- [`W08E06.java`](Exercise2025/src/W08/W08E06.java) — Restaurant bill calculator: reads itemized menu with prices, calculates subtotal, applies tax and delivery charges (free for large orders ≥$50), allows tip percentage selection, displays formatted receipt with locale-aware currency formatting.
+- [`W08E07.java`](Exercise2025/src/W08/W08E07.java) — Movie theater seating system: displays 2D grid of theater seats, allows users to book seats with 2D coordinate validation, tracks seat availability (booked vs available), provides occupancy statistics and percentage.
+
+**Pattern**: Each exercise combines multiple W01-W07 concepts in realistic applications using static helper methods for code organization without custom classes.
+
 Summary of Week 09 (W09)
 -------------------------
 The `src/W09` folder demonstrates file I/O in text and binary form, resource management styles, and utility wrappers:
@@ -153,6 +167,59 @@ The `src/W09` folder demonstrates file I/O in text and binary form, resource man
 - [`W09E07.java`](Exercise2025/src/W09/W09E07.java) — Contrast traditional try/finally resource handling with try-with-resources while reading a sample file.
 - [`W09E08.java`](Exercise2025/src/W09/W09E08.java) — Combined text-file workflow: static methods to write random ints to a file and read them back to find the max (E01+E02 in one class).
 - [`W09E09.java`](Exercise2025/src/W09/W09E09.java) — Combined binary-file workflow: static methods to write random ints to a binary file and read/average them (E03+E04 in one class).
+
+Summary of Week 10 (W10)
+-------------------------
+The `src/W10` folder provides a progressive introduction to object-oriented programming in Java, covering classes, encapsulation, and polymorphism concepts:
+
+- [`W10E01.java`](Exercise2025/src/W10/W10E01.java) — Introduction to classes: understanding what a class is, basic structure with instance variables, creating objects, and accessing attributes. Demonstrates the blueprint-object relationship.
+- [`W10E02.java`](Exercise2025/src/W10/W10E02.java) — Instance variables and methods: adding behavior to classes through methods, distinguishing instance vs local variables, methods that use and modify object state.
+- [`W10E03.java`](Exercise2025/src/W10/W10E03.java) — Constructors: special methods for object initialization, constructor syntax (same name as class, no return type), automatic invocation with `new`, and cleaner object creation.
+- [`W10E04.java`](Exercise2025/src/W10/W10E04.java) — Accessor methods (getters): introduction to encapsulation with `private` variables, creating getter methods for controlled read access, naming conventions (`getVariableName()`, `isVariableName()` for booleans).
+- [`W10E05.java`](Exercise2025/src/W10/W10E05.java) — Mutator methods (setters): creating setter methods for controlled write access, data validation in setters, maintaining data integrity, complete encapsulation pattern with getters and setters.
+- [`W10E06.java`](Exercise2025/src/W10/W10E06.java) — Complete class design: bringing together private variables, constructors, getters, setters, and behavior methods in a well-designed Product class following OOP principles.
+- [`W10E07.java`](Exercise2025/src/W10/W10E07.java) — Constructor overloading: multiple constructors with different parameter lists, providing flexibility in object creation, default values, and convenience constructors (e.g., square from one parameter).
+- [`W10E08.java`](Exercise2025/src/W10/W10E08.java) — Method overloading: multiple methods with same name but different parameters (number, type, or order), demonstrates type selection and practical Calculator class examples.
+- [`W10E09.java`](Exercise2025/src/W10/W10E09.java) — Combining constructor and method overloading: practical BankAccount class using both techniques together for maximum flexibility (deposit, withdraw, transfer with optional descriptions).
+- [`W10E10.java`](Exercise2025/src/W10/W10E10.java) — Comprehensive library system: complete application bringing all Week 10 concepts together with Book and Library classes, demonstrating object interactions, encapsulation, overloading, and real-world OOP design.
+
+Summary of Week 11 (W11)
+-------------------------
+The `src/W11` folder focuses on inheritance, overriding, constructors with `super`, access modifiers, and polymorphism:
+
+- [`W11E01.java`](Exercise2025/src/W11/W11E01.java) — Introduction to classes: simple fields, constructor, and instance method for self-introduction.
+- [`W11E02.java`](Exercise2025/src/W11/W11E02.java) — First inheritance example: child `StudentE02` extends parent `PersonE02`, reusing a greeting method.
+- [`W11E03.java`](Exercise2025/src/W11/W11E03.java) — Constructor chaining with `super`: parent runs first, child adds its own setup.
+- [`W11E04.java`](Exercise2025/src/W11/W11E04.java) — Overriding methods: child replaces parent description; dynamic dispatch chooses the child version.
+- [`W11E05.java`](Exercise2025/src/W11/W11E05.java) — Using `super.method()`: extend parent behavior while keeping its output.
+- [`W11E06.java`](Exercise2025/src/W11/W11E06.java) — Protected vs private members: subclasses can call protected methods; private stays inside the class.
+- [`W11E07.java`](Exercise2025/src/W11/W11E07.java) — Comparing access modifiers: public vs protected vs private visibility in practice.
+- [`W11E08.java`](Exercise2025/src/W11/W11E08.java) — Final methods: inherited behaviors that cannot be overridden.
+- [`W11E09.java`](Exercise2025/src/W11/W11E09.java) — Object class methods: overriding `toString()`, `equals()`, and `hashCode()` for readable and comparable objects.
+- [`W11E10.java`](Exercise2025/src/W11/W11E10.java) — Polymorphism with an abstract base: array of shapes calling each specific `area()` implementation.
+
+Summary of Week 12 (W12)
+-------------------------
+The `src/W12` folder continues W10/W11 by combining classes, subclasses, inheritance, polymorphism, overloading/overriding, and Scanner/PrintWriter I/O with basic exception handling:
+
+- [`W12E01.java`](Exercise2025/src/W12/W12E01.java) — Multi-level people hierarchy showing overriding vs overloading with polymorphic calls.
+- [`W12E02.java`](Exercise2025/src/W12/W12E02.java) — Vehicles with super reuse, overriding, and overloaded trip starters. Demonstrates inheritance, constructor chaining, and polymorphism.
+- [`W12E03.java`](Exercise2025/src/W12/W12E03.java) — Polymorphic shapes parsed via Scanner, written with PrintWriter using safe resources. Shows abstract base class and method overloading.
+- [`W12E04.java`](Exercise2025/src/W12/W12E04.java) — Payroll example reusing super logic, overriding pay, and overloading calculations. Demonstrates extending parent behavior with `super`.
+- [`W12E05.java`](Exercise2025/src/W12/W12E05.java) — Bank account with overloaded constructors/methods, constructor chaining with `this()`, and statement output via PrintWriter.
+- [`W12E06.java`](Exercise2025/src/W12/W12E06.java) — Abstract resources with overridden load flows and overloaded sources. Shows abstract class pattern and polymorphism with arrays.
+- [`W12E07.java`](Exercise2025/src/W12/W12E07.java) — Messaging notifiers demonstrating polymorphic send plus overloaded variants. Uses inheritance and method overloading.
+- [`W12E08.java`](Exercise2025/src/W12/W12E08.java) — Pet hierarchy built from Scanner input, runtime binding of speak, overloaded feeding. Demonstrates abstract methods and dynamic binding.
+- [`W12E09.java`](Exercise2025/src/W12/W12E09.java) — Number processing with overriding, overloading, Scanner validation, and PrintWriter output. Shows exception handling for input parsing.
+- [`W12E10.java`](Exercise2025/src/W12/W12E10.java) — Capstone grade tasks combining parsing, inheritance, overriding/overloading, and persisted results. Abstract class with multiple implementations.
+- [`W12E11.java`](Exercise2025/src/W12/W12E11.java) — Interface implementation with polymorphic product types (Books, Electronics). Demonstrates interface contracts, method overloading, and different tax calculations per type.
+- [`W12E12.java`](Exercise2025/src/W12/W12E12.java) — Advanced polymorphism with abstract classes and inheritance hierarchy. Bank accounts (Savings, Checking) with interest calculation, `super()` constructor chaining, and method overriding.
+- [`W12E13.java`](Exercise2025/src/W12/W12E13.java) — Capstone: combining interfaces, abstract classes, and polymorphism. Fleet management system with multiple interface implementation, abstract methods, method overloading, and runtime polymorphic dispatch. Demonstrates complete OOP patterns with detailed comments.
+- [`W12E14.java`](Exercise2025/src/W12/W12E14.java) — Polymorphism fundamentals: Early Binding vs Late Binding. Demonstrates method overloading (compile-time resolution) with Calculator class and method overriding (runtime resolution) with Animal hierarchy. Shows how JVM uses virtual method tables for dynamic dispatch.
+- [`W12E15.java`](Exercise2025/src/W12/W12E15.java) — Upcasting and safe downcasting with `instanceof`. Shows automatic upcasting of child objects to parent references and demonstrates proper downcasting patterns using `instanceof` checks. Includes practical examples with vehicle fleet analysis.
+- [`W12E16.java`](Exercise2025/src/W12/W12E16.java) — Clone method and Comparable interface. Demonstrates shallow vs deep copying, implements `clone()` for proper object duplication, and implements `Comparable<T>` for natural ordering with multi-level sort criteria (GPA, average score, name). Includes student ranking system.
+- [`W12E17.java`](Exercise2025/src/W12/W12E17.java) — Inner classes: Non-static inner, static nested, local, and anonymous. Shows all four types with practical examples: Transaction inner class accessing outer members, Address static nested class, LoginAttempt local class in method, and Validator anonymous class for event handling.
+
 
 How to run
 ----------
